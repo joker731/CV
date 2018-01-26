@@ -21,6 +21,9 @@ body{
     border-top:1px solid #dedede; 
   }
   /*上面不要看*/
+
+
+  
   .topNavBar {
   }
   .topNavBar .logo {
@@ -29,7 +32,7 @@ body{
     padding-top: 1px;
   }
   .topNavBar .logo .rs{
-    color: #e6686a;
+    color:rgba(222, 45, 65, 1);
     margin-right: 4px;
   }
   .topNavBar .logo .card{
@@ -64,7 +67,7 @@ body{
     display: block;
   }
   .topNavBar nav ul>li>a:hover{
-    border-bottom-color: #DC6465;
+    border-bottom-color: rgba(222, 45, 65, 1);
   }
   .banner{
     margin-top: -80px;
@@ -81,38 +84,56 @@ body{
     padding: 16px;
   }
   .userCard{
-    max-width: 940px;
+    border:10px solid gray;
+    border-radius:25px;
+    margin-top: -350px;
+    max-width: 1011px;
     margin-left: auto;
     margin-right: auto;
-    background-color:#EFEFEF;
-    border: 1px solid red;
+    background: -webkit-linear-gradient(rgb(43, 41, 41),black); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(rgb(29, 28, 28), black); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(rgb(22, 22, 22), black); /* Firefox 3.6 - 15 */
+    background: linear-gradient(rgb(22, 22, 22), black); /* 标准的语法（必须放在最后） */
+    color:white
+
+    
   }
   .userCard .welcome{
+
     position: relative;
-    background: #e6686a;
+    background:rgba(222, 45, 65, 1);
     color: white;
     display: inline-block;
     padding: 4px 16px;
     line-height: 22px;
     margin-bottom: 10px;
+    margin-left: 20px;
+    margin-top: 15px;
+    
   }
   .userCard .welcome .triangle{
     border: 10px solid transparent;
     width: 0px;
-    border-left-color: #e6686a;
+    border-left-color:rgba(222, 45, 65, 1);
     border-top-width: 0px;
     position: absolute;
-    left: 4px;
+    left: 20px;
     top: 100%;
   }
   .userCard .picture{
     float: left;
+
 
   }
   .userCard .text{
     float: left;
     margin-left: 65px;
     width: 470px;
+    color: white;
+    border:2px solid #dedede;
+    border-radius:25px;
+    background: rgb(11, 4, 15);
+    
   }
   .userCard .text h1{
     margin: 18px;
@@ -137,8 +158,9 @@ body{
     color: #9A9DA2;
   }
 
+
   .userCard > footer.media{
-    background: #e6686a;
+    background:gray;
     text-align: center;
   }
   .userCard > footer.media > a{
@@ -150,7 +172,7 @@ body{
     margin: 16px ;
   }
   .userCard > footer.media > a:hover{
-    background: #cf5d5f;
+    background:rgba(222, 45, 65, 1);
   }
   .userCard svg{
     width: 30px;
