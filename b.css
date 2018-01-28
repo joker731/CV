@@ -23,7 +23,12 @@ body{
   /*上面不要看*/
 
 
+
+
   
+  body > main {
+  margin-top: -350px;
+}
   .topNavBar {
   }
   .topNavBar .logo {
@@ -77,27 +82,23 @@ body{
 
   }
   .banner .mask{
-    height: 1200px;
+    height: 800px;
     background-color: rgba(0,0,0,0.001);
   }
   .topNavBar-inner{
     padding: 16px;
   }
   .userCard{
-    border:10px solid gray;
+    border:10px solid  #EFEFEF;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.8);
     border-radius:25px;
-    margin-top: -350px;
-    max-width: 1011px;
+    max-width: 1012px;
     margin-left: auto;
     margin-right: auto;
-    background: -webkit-linear-gradient(rgb(43, 41, 41),black); /* Safari 5.1 - 6.0 */
-    background: -o-linear-gradient(rgb(29, 28, 28), black); /* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(rgb(22, 22, 22), black); /* Firefox 3.6 - 15 */
-    background: linear-gradient(rgb(22, 22, 22), black); /* 标准的语法（必须放在最后） */
-    color:white
-
-    
+    background: linear-gradient(rgb(22, 22, 22), black); 
+    color:white 
   }
+
   .userCard .welcome{
 
     position: relative;
@@ -126,6 +127,7 @@ body{
 
   }
   .userCard .text{
+    margin-top:40px;
     float: left;
     margin-left: 65px;
     width: 470px;
@@ -160,15 +162,15 @@ body{
 
 
   .userCard > footer.media{
-    background:gray;
+    background: #EFEFEF;
     text-align: center;
   }
   .userCard > footer.media > a{
     display: inline-block;
-    width: 40px;
+    width: 50px;
     line-height: 30px;
     border-radius: 50%;
-    padding: 5px 0;
+    padding: 10px 0;
     margin: 16px ;
   }
   .userCard > footer.media > a:hover{
@@ -180,4 +182,38 @@ body{
     fill: white;
     vertical-align: top;
   }
+  .downloadResume-wrapper{
+    text-align: center;
+  }
+  .downloadResume{
+  
+    font-size: 14px;
+    line-height: 16px;
+    padding:21px 105px;
+    display: inline-block;
+    border: 1px solid #CDCFD1;
+    border-radius: 5px;
+    background: #EFEFEF;
+    font-weight: bold;
+    margin:52px 0;
+    transition:box-shadow 0.5s;
+    color: black;
+  
+
+
+  }
+  .downloadResume:hover{
+    box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.5);
+  }
+  .selfIntroduction{
+    max-width: 1012px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family:KaiTi;
+    line-height: 2;
+    font-size: 20px;
+
+  }
+
 
