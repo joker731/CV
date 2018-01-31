@@ -1,7 +1,7 @@
-body{
-    margin: 0;
-    padding: 0;
-    background: rgb(216, 212, 212);
+  body{
+      margin: 0;
+      padding: 0;
+      background:white;
   }
   a{
     text-decoration: none;
@@ -345,6 +345,9 @@ body{
 .portfolio .works> .small{
   position: absolute;
 }
+
+/* ****** */
+
 
 
 

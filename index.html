@@ -2,7 +2,8 @@
 <html>
   <head>
     <title>陈挺的个人简历</title>
-    <link rel="stylesheet" href="./b.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./loading.css">
     <script src="//at.alicdn.com/t/font_460088_d7eqg6cqxyumobt9.js"></script>
     <style type="text/css">
       .icon {
@@ -11,12 +12,24 @@
          fill: currentColor;
          overflow: hidden;
       }
+      .site-welcome{
+        display: none;
+        position: fixed;
+        top:0;left:0;width: 100%;height: 100%;
+        background: white;
+        z-index: 1;
+        justify-content: center;
+        align-items: center;
+      }
+      .site-welcome.active{
+        display: flex;
+      }
   </style>
   </head>
   <body>
-      <svg class="icon" aria-hidden="true">
-          <use xlink:href="#icon-jirengulogojichu2"></use>
-      </svg>
+    <div id="siteWelcome" class="site-welcome active">
+      <div class="loading"></div>
+    </div>
     <div class="topNavBar clearfix">
       <div class="topNavBar-inner">
         <a class="logo" href="#" alt="logo" style="float: left; ">
@@ -182,9 +195,6 @@
         portfolio3.onclick = function(){
           portfolioBar.className = 'bar state-3'
         }
-        
-
-      
       </script>
 
 
@@ -202,5 +212,11 @@
 
     </section>
 
+
+    <script>
+      setTimeout(function(){
+        siteWelcome.className.remove('active')
+      },3000)
+    </script>
   </body>
 </html>
