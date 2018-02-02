@@ -2,7 +2,7 @@
     width:200px;
     height: 200px;
     position: relative;  
-    border: 1px solid red;
+
 }
 .loading::before,
 .loading::after{

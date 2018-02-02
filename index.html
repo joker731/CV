@@ -24,14 +24,15 @@
       .site-welcome.active{
         display: flex;
       }
+
   </style>
   </head>
   <body>
     <div id="siteWelcome" class="site-welcome active">
       <div class="loading"></div>
     </div>
-    <div class="topNavBar clearfix">
-      <div class="topNavBar-inner">
+    <div id="topNav"class="topNavBar ">
+      <div class="topNavBar-inner clearfix" >
         <a class="logo" href="#" alt="logo" style="float: left; ">
           <span class="rs">Jason</span><span class="card">card</span>
         </a>
@@ -215,8 +216,17 @@
 
     <script>
       setTimeout(function(){
-        siteWelcome.className.remove('active')
-      },3000)
+        siteWelcome.classList.remove('active')
+      },1500)
+    </script>
+    <script>
+    window.onscroll = function(xxxx){
+      if(window.scrollY > 0){
+        topNav.classList.add('sticky')
+      }else{
+        topNav.classList.remove('sticky')
+      }
+    }
     </script>
   </body>
 </html>
