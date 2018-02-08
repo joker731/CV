@@ -1,7 +1,7 @@
   body{
       margin: 0;
       padding: 0;
-      background:white;
+      background:rgb(247, 245, 246);
   }
   a{
     text-decoration: none;
@@ -30,7 +30,7 @@
 
   
   body > main {
-  margin-top: -350px;
+  margin-top: -320px;
 }
   .topNavBar {
     padding: 20px 0 20px 0;
@@ -39,13 +39,13 @@
     left:0;
     width:100%;
     transition: all 0.8s ;
-    color: rgba(255, 255, 255, 0.7);
+    color:white;
   }
   .topNavBar.sticky{
     padding: 1px 0;
     background: rgba(255, 255, 255, 0.9);
     z-index: 1;
-    color: black;
+    color: rgb(14, 1, 1);
     box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.8);
   }
   .topNavBar .logo {
@@ -124,14 +124,16 @@
     padding: 16px;
   }
   .userCard{
-    border:10px solid  #EFEFEF;
+    border:10px solid white;
     box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.8);
-    border-radius:25px;
-    max-width: 1012px;
+    border-radius:5px;
+    max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
-    background: linear-gradient(rgb(22, 22, 22), black); 
-    color:white 
+    background-image: url('./image/yin.jpg') ;
+    background-size:cover;
+    background-position: center center;
+    color:white ;
   }
 
   .userCard .welcome{
@@ -156,20 +158,15 @@
     left: 20px;
     top: 100%;
   }
-  .userCard .picture{
-    float: left;
 
-
-  }
   .userCard .text{
-    margin-top:40px;
+    margin-top:300px;
     float: left;
-    margin-left: 65px;
-    width: 470px;
+    width: 250px;
     color: white;
-    border:2px solid #dedede;
-    border-radius:25px;
+    border:2px solid white;
     background: rgb(11, 4, 15);
+    border-radius: 5px 5px 5px 0px;
     
   }
   .userCard .text h1{
@@ -178,9 +175,7 @@
   .userCard .text hr{
     margin: 20px 0;
   }
-  .userCard .pictureAndText{
-    padding: 50px;
-  }
+
   .userCard dl dt,
   .userCard dl dd{
     float: left;
@@ -197,7 +192,7 @@
 
 
   .userCard > footer.media{
-    background: #EFEFEF;
+    background: white;
     text-align: center;
   }
   .userCard > footer.media > a{
@@ -209,7 +204,7 @@
     margin: 16px ;
   }
   .userCard > footer.media > a:hover{
-    background:rgba(222, 45, 65, 1);
+    background:rgb(214, 211, 213);
   }
   .userCard svg{
     width: 30px;
@@ -228,7 +223,7 @@
     display: inline-block;
     border: 1px solid #CDCFD1;
     border-radius: 5px;
-    background: #EFEFEF;
+    background:  white;
     font-weight: bold;
     margin:52px 0;
     transition:box-shadow 0.5s;
@@ -251,7 +246,7 @@
   }
   .skills,
   .portfolio {
-    max-width: 1012px;
+    max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;
@@ -266,6 +261,7 @@
     font-weight:600;
 
   }
+
   .skills h3{
     font-size: 14px;
     line-height: 1.1;
@@ -371,12 +367,42 @@
   }
 .portfolio .works{
   position: relative;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 .portfolio .works> .big,
-.portfolio .works> .small{
+.portfolio .works> .small1,
+.portfolio .works> .small2{
   position: absolute;
+
 }
+.portfolio .works> .big{
+  height: 610px;
+  width: 700px;
+  background-image: url('./image/long.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+.portfolio .works> .small1{
+  height: 300px;
+  width: 300px;
+  background-image: url('./image/san.jpg');
+  background-size: cover;
+  background-position: center center;
+
+}
+.portfolio .works> .small2{
+  height: 300px;
+  width: 300px;
+  background-image: url('./image/tuzi.jpg');
+  background-size: cover;
+  background-position: center center;
+
+}
+
+
 
 /* ****** */
 
